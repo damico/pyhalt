@@ -1,11 +1,11 @@
-from properties import configFile
+from properties import CONFIG_FILE
 
 class hostSec(object):
     
     def __init__(self):
         self 
     def isValidClient(self,client):
-        f = open(configFile)
+        f = open(CONFIG_FILE)
         validClients = list();
         for line in f:
             validClients.append(line)
