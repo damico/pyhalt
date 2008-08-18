@@ -1,1 +1,1 @@
-configFile = "serverList" 
+CONFIG_FILE = "serverList" 
