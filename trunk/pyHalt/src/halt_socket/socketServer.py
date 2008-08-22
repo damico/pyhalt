@@ -3,10 +3,15 @@ import socket
 import os
 from hostSec import hostSec
 
-HOST = '127.0.0.1'       # Symbolic name meaning the local host
+HOST = ''       # Symbolic name meaning the local host
 PORT = 8081              # Arbitrary non-privileged port
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))
+if HOST == '':
+    print 'Listening at localhost'
+else:
+    print 'Listening at '+HOST
+    
 s.listen(1)
 data = '';
 while 1:
