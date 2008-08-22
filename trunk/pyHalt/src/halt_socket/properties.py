@@ -1,1 +1,1 @@
-CONFIG_FILE = "serverList" 
+CONFIG_FILE = "/etc/pyHalt/serverList" 
